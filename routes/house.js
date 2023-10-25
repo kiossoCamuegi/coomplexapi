@@ -2,6 +2,14 @@ const express = require("express");
 const router = express.Router();
 const Homes = require("../models/homes");
 
+
+
+//geting houses
+router.get("/", async(req, res)=>{
+   res.send("Hello to kiosso api !");
+});
+
+
 //geting houses
 router.get("/homes", async(req, res)=>{
    try {
